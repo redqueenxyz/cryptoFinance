@@ -84,7 +84,7 @@ A rough launch plan for various crypto/digital financial products.
 
 ## Availability
 
-A list of underlying assets and potential data sources, generally leveraging the [Iconomi](https://www.iconomi.net/) platform.
+A list of underlying assets and potential data sources, currently leveraging the [Iconomi](https://www.iconomi.net/) platform.
 
 | Name             	| Coin 	| Description                                                                                                                                                                                                                                            	| Platform Availability 	| Data Availability 	| Portfolio Inclusion 	|
 |------------------	|------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-----------------------	|-------------------	|---------------------	|
@@ -126,8 +126,7 @@ A list of underlying assets and potential data sources, generally leveraging the
 | Matchpool | GUP | Is the token used on Matchpool, the first platform for mainstream matchmaking powered by a cryptographic token economy. GUP tokens can be purchased or sold with real money. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
 | Melon | MLN | Is a core component of the Melon project. It is designed to enjoy a “usage right” to the Melon protocol. To use the Melon protocol one has to use MLN tokens. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
 | Metal | MTL | Is fairly distributed through a process known as Proof of Processed Payments. When you send money or make purchases you earn a little reward in MTL for every dollar you spend. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
-| Monaco | MCO | Is Visa-based debit card, which supports Ether and Bitcoin. |
-[✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
+| Monaco | MCO | Is Visa-based debit card, which supports Ether and Bitcoin. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
 | Mysterium | MYST | Will work as access tokens to the Mysterium Network, an open-source network allowing anyone to rent their unused network traffic while providing a secure connection for those in need. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
 | Nexium | NXC | Follows basic standards of the community and can be used with Mist Ethereum Wallet or MyEtherWallet. NXC are tokens created for Beyond The Void within the Ethereum Blockchain. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
 | Numeraire | NMR | Is an ERC20 Ethereum token used on the Numerai platform, a new kind of hedge fund built by a network of data scientists. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
@@ -137,7 +136,7 @@ A list of underlying assets and potential data sources, generally leveraging the
 | Raiden | RDN | Is an off-chain scaling solution that enables near-instant, low-fee, scalable payments and works with any ERC20-compatible token. The RDN token is used to pay fees for using the Raiden Network. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
 | Request | REQ | Token is required for the operation of Request contracts, especially the extension layers for advanced features. Request is a layer built on Ethereum that disintermediates payment requests. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
 | Ripio Credit Network | RNC | Enables connections between lenders and borrowers located anywhere in the world, regardless of currency. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
-| SALT | SALT is a membership-based lending and borrowing network that allows users to leverage their blockchain assets to secure cash loans. SALT tokens represent levels of access to the platform and can also be redeemed for products, services, and other rewards.  | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
+| SALT | SALT | A membership-based lending and borrowing network that allows users to leverage their blockchain assets to secure cash loans. SALT tokens represent levels of access to the platform and can also be redeemed for products, services, and other rewards.  | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
 | SingularDTV | SNGLS | Is a blockchain entertainment studio laying the foundation for a decentralised entertainment industry. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
 | Status | SNT | Is used to create a Users-as-Stakeholders network, allowing the behaviour of the network and its software, to become aligned with the interests of its users. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
 | Steem | STEEM | Is building a distributed content and media distribution platform, promising to disrupt publishing and distribution businesses. Community building and social interaction are rewarded. | [✓](https://www.iconomi.net/digital-assets) | TBD |  TBD |
