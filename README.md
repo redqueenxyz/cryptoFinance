@@ -9,13 +9,13 @@ A rough launch plan for various crypto/digital financial products.
   use.
 * Allow general, scalable access to these tools for savvy or novice
   investors.
-* Explore and build natively on popular cryptocurrrency platforms to uncover
+* Explore and build natively on popular cryptocurrency platforms to uncover
   novel investment applications.
 
 ## Roadmap
 
 ### Phase 1: Index Fund 
-* **Goal**: Use Iconomi's robust [DAA architecture](https://www.iconomi.net/arrays) to quickly launch a simple quantitive fund, demonstrating Markowitz Portfolio Theory.
+* **Goal**: Use Iconomi's robust [DAA architecture](https://www.iconomi.net/arrays) to quickly launch a simple quantitative fund, demonstrating Markowitz Portfolio Theory.
 * **Strategy**: *Modern portfolio theory (MPT)*, or *mean-variance analysis*, is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk, defined as variance. Its key insight is that an asset's risk and return should not be assessed by itself, but by how it contributes to a portfolio's overall risk and return.  
 * **Origin**: Economist Harry Markowitz introduced MPT in a 1952 essay, for which he was later awarded a Nobel Prize in Economics.
 * **Reasoning**: MPT has occasionally been bashed for being more theoretical than practical, which is reasonable since [pure MPT portfolios are highly sensitive to intercorrelation, the latest historical returns, and linear market assumptions](https://www.quora.com/Why-is-modern-portfolio-theory-wrong/answer/Gaurav-Chakravorty?srid=hGdJD). Generally, investors use MPT as a tool to assist in portfolio planning, but we intend to publish this portfolio to act as an active, investable market benchmark from which other investors could take insights from or build upon. Simply put; any technical trader should be usig a [continuously rebalanced Markowitz portfolio](http://www.math.ust.hk/~makchen/MAFS5140/Chap4.pdf) as a benchmark for optimal market return given risk at a given point in time.
@@ -33,6 +33,7 @@ A rough launch plan for various crypto/digital financial products.
         * Build these metric analyses on [Jupyter](https://cloud.google.com/datalab/) to scale computation effeciently, and save results.
         * Use saved results to a sub dataset for quick portfolio generation by calling a [Google Cloud Function](https://cloud.google.com/functions/).
     * Step 3: Data Application
+        * Build a rudimentary back testing / live testing system to ensure ongoing success of this methodology. 
         * Given available mean and variance of underlying assets (potentially incorporating a maximum cap to reduce over-exposure), generate a vector portfolio weights.
         * Initial portfolio will follow the standard [**Maximum Sharpe Portfolio**](https://blog.thinknewfound.com/2013/02/the-intuition-behind-sharpe-maximization-in-unconstrained-mean-variance-optimization/), which seeks to find the tangency portfolio that yields the highest return for the least risk.
         * Integrate recommended portfolio weights into an Iconomi DAA.
@@ -43,10 +44,10 @@ A rough launch plan for various crypto/digital financial products.
         * Incorporating new digital assets as tehy become available on the Iconomi platform, in order to rebalance with correct asset availability.
 
 ### Phase 2: Index Fund as a Token
-* **Goal**: Tokenize the Iconomi DAA portfolio into a tradeable token, allowing for access in secondary markets, and inclusion as underyling in other portfolios.
+* **Goal**: Tokenize the Iconomi DAA portfolio into a tradeable token, allowing for access in secondary markets, and inclusion as underlying in other portfolios.
 * **Strategy**: Leverage all [existing work](https://github.com/redqueenxyz/sigmaCoin) and discoveries from Phase 1 to further improve fund liquidity through native Ethereum integration.
 * **Origin**: Crypto securities are a new way to both represent and facilitate financial trades, and other platform native variants like [C20](https://crypto20.com/en/) and [BLX](https://www.iconomi.net/dashboard/#/daa/BLX) have shown early success in this secondary market.
-* **Reasoning**: Native Ethereum implementations will quickly become necessary to keep pace with the market, and may even yield novel features that are undiscovered or unavailable in platforms like Iconomi, making the relatively simple wrapping of our Phase 1 findings an effecient way to explore this platform's technology purposefully for financial product applications.
+* **Reasoning**: Native Ethereum implementations will quickly become necessary to keep pace with the market, and may even yield novel features that are undiscovered or unavailable in platforms like Iconomi, making the relatively simple wrapping of our Phase 1 findings an efficient way to explore this platform's technology purposefully for financial product applications.
 * **Process**: 
     * Step 1: Platform (Ethereum) Exploration
     * Step 2: Data Accessibility ("Off-chain" components)
