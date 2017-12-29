@@ -41,7 +41,7 @@ A rough launch plan for various crypto/digital financial products.
     * Step 4: Data Updating
         * Re-reunning Steps 1 - 3 on a biweekly or monthly cadence to rebalance DAA portfolio to track market, since [minor variations significantly influence MPT viability](https://www.quora.com/Why-is-modern-portfolio-theory-wrong/answer/Gaurav-Chakravorty?srid=hGdJD).
         * (*Optional*) Ideally reduce cadence even further via automation, to allow optimal market mean and variance tracking. Theoretically, a continuously rebalanced MPT portfolio would be the best case, but such a setup may be impractical in practice (algorithmic/data/transactional costs would be too high.)
-        * Incorporating new digital assets as tehy become available on the Iconomi platform, in order to rebalance with correct asset availability.
+        * Incorporating new digital assets as they become available on the Iconomi platform, in order to rebalance with correct asset availability.
 
 ### Phase 2: Index Fund as a Token
 * **Goal**: Tokenize the Iconomi DAA portfolio into a tradeable token, allowing for access in secondary markets, and inclusion as underlying in other portfolios.
