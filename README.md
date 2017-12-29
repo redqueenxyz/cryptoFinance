@@ -18,19 +18,19 @@ A rough launch plan for various crypto/digital financial products.
 * **Goal**: Use Iconomi's robust [DAA architecture](https://www.iconomi.net/arrays) to quickly launch a simple quantitative fund, demonstrating Markowitz Portfolio Theory.
 * **Strategy**: *Modern portfolio theory (MPT)*, or *mean-variance analysis*, is a mathematical framework for assembling a portfolio of assets such that the expected return is maximized for a given level of risk, defined as variance. Its key insight is that an asset's risk and return should not be assessed by itself, but by how it contributes to a portfolio's overall risk and return.  
 * **Origin**: Economist Harry Markowitz introduced MPT in a 1952 essay, for which he was later awarded a Nobel Prize in Economics.
-* **Reasoning**: MPT has occasionally been bashed for being more theoretical than practical, which is reasonable since [pure MPT portfolios are highly sensitive to intercorrelation, the latest historical returns, and linear market assumptions](https://www.quora.com/Why-is-modern-portfolio-theory-wrong/answer/Gaurav-Chakravorty?srid=hGdJD). Generally, investors use MPT as a tool to assist in portfolio planning, but we intend to publish this portfolio to act as an active, investable market benchmark from which other investors could take insights from or build upon. Simply put; any technical trader should be usig a [continuously rebalanced Markowitz portfolio](http://www.math.ust.hk/~makchen/MAFS5140/Chap4.pdf) as a benchmark for optimal market return given risk at a given point in time.
+* **Reasoning**: MPT has occasionally been bashed for being more theoretical than practical, which is reasonable since [pure MPT portfolios are highly sensitive to intercorrelation, the latest historical returns, and linear market assumptions](https://www.quora.com/Why-is-modern-portfolio-theory-wrong/answer/Gaurav-Chakravorty?srid=hGdJD). Generally, investors use MPT as a tool to assist in portfolio planning, but we intend to publish this portfolio to act as an active, investable market benchmark from which other investors could take insights from or build upon. Simply put; any technical trader should be using a [continuously rebalanced Markowitz portfolio](http://www.math.ust.hk/~makchen/MAFS5140/Chap4.pdf) as a benchmark for optimal market return given risk at a given point in time.
 * **Process**: 
     * Step 1: Data Acquisition
         * Discover relevant historical datasets to generate initial portfolio model.
         * Organize data into refreshable sources and pipelines, allowing the algorithm to leverage new data on demand.
         * Build these pipelines into an Analytics warehouse like [Google Cloud Platform](https://cloud.google.com/bigquery/), for ease of use and scalability.
     * Step 2: Data Preparation
-        * Clean and interpolate data to ensure highest data fidelity and algorithmic effeciency. 
-        * Batch compute covariant matrices, historical mean returns, saving/reusing values for algorithmic effeciency. 
+        * Clean and interpolate data to ensure highest data fidelity and algorithmic efficiency. 
+        * Batch compute covariant matrices, historical mean returns, saving/reusing values for algorithmic efficiency. 
         * (*Optional*) Potentially incorporate PCA (Principal Component Analysis) to examine independent underlying performance, accounting for intercorrelation of underlying assets.
         * (*Optional*) Also incorporate other [mathematical constraints](http://www.math.ust.hk/~makchen/MAFS5140/Chap4.pdf) to limit maximum weights, disallow short selling, etc.
         * (*Optional*) Use same data and algorithm to construct other portfolios for different edge cases on the effeicent frontier such as: **Lowest Risk Portfolio**, **Highest Risk Portfolio**,  etc.
-        * Build these metric analyses on [Jupyter](https://cloud.google.com/datalab/) to scale computation effeciently, and save results.
+        * Build these metric analyses on [Jupyter](https://cloud.google.com/datalab/) to scale computation efficiently, and save results.
         * Use saved results to a sub dataset for quick portfolio generation by calling a [Google Cloud Function](https://cloud.google.com/functions/).
     * Step 3: Data Application
         * Build a rudimentary back testing / live testing system to ensure ongoing success of this methodology. 
@@ -39,7 +39,7 @@ A rough launch plan for various crypto/digital financial products.
         * Integrate recommended portfolio weights into an Iconomi DAA.
         * (*Optional*) Use same data and algorithm to construct other portfolios for different edge cases on the effeicent frontier such as: **Lowest Risk Portfolio**, **Highest Risk Portfolio**,  etc.
     * Step 4: Data Updating
-        * Re-reunning Steps 1 - 3 on a biweekly or monthly cadence to rebalance DAA portfolio to track market, since [minor variations significantly influence MPT viability](https://www.quora.com/Why-is-modern-portfolio-theory-wrong/answer/Gaurav-Chakravorty?srid=hGdJD).
+        * Re-running Steps 1 - 3 on a biweekly or monthly cadence to rebalance DAA portfolio to track market, since [minor variations significantly influence MPT viability](https://www.quora.com/Why-is-modern-portfolio-theory-wrong/answer/Gaurav-Chakravorty?srid=hGdJD).
         * (*Optional*) Ideally reduce cadence even further via automation, to allow optimal market mean and variance tracking. Theoretically, a continuously rebalanced MPT portfolio would be the best case, but such a setup may be impractical in practice (algorithmic/data/transactional costs would be too high.)
         * Incorporating new digital assets as they become available on the Iconomi platform, in order to rebalance with correct asset availability.
 
@@ -58,21 +58,21 @@ A rough launch plan for various crypto/digital financial products.
 ### Phase 3: (*Optional*) Robo Investing as a Service
 * **Goal**: Given newly gained knowledge of crypto financial products, work towards the construction of a simple investing bot assistant, complete with simple performance dashboards, dollar cost averaging, automated rebalancing, and other features necessary to comfort new investors in this space.
 * **Strategy**: Having created new tools and techniques to appeal to technical and institutional traders, build a product that makes crypto investing more accesible to the average investor, incorporating salient techniques and best practices.
-* **Origin**: Currently a variety of hypothetical crypto currency investors are overwhelmed by the difficulty to enter the market via exchanges, navigating the variety of tokens and digital assets available, deciding on an optimal strategy, and then executing that strategy consistently. We hope to simplify this entire process using a simple wrapper, and make crypto-Finance more accesible.
-* **Reasoning**: Robo Advisors like [Wealthsimple](http://wealthsimple.com/), [Betterment](http://betterment.com/), and [Wealthfront](http://wealthfront.com/) are gaining notoriety for breaking down the jargon of investing, captivating the interest (and funding) of the less-savy consumer as a far more effecient means of investing. A similar product for cryptocurrencies (or the incorporation of digital assets onto those platforms) is an eventuality, and technology exploring such application may become valuable quickly.
+* **Origin**: Currently a variety of hypothetical crypto currency investors are overwhelmed by the difficulty to enter the market via exchanges, navigating the variety of tokens and digital assets available, deciding on an optimal strategy, and then executing that strategy consistently. We hope to simplify this entire process using a simple wrapper, and make crypto-Finance more accessible.
+* **Reasoning**: Robo Advisors like [Wealthsimple](http://wealthsimple.com/), [Betterment](http://betterment.com/), and [Wealthfront](http://wealthfront.com/) are gaining notoriety for breaking down the jargon of investing, captivating the interest (and funding) of the less-savvy consumer as a far more efficient means of investing. A similar product for cryptocurrencies (or the incorporation of digital assets onto those platforms) is an eventuality, and technology exploring such application may become valuable quickly.
 * **Process**: 
     * Step 1: Web App Development
     * Step 2: Token / Asset Buying Integration
     * Step 3: Account Funding Integration
     * Step 4: App Launch 
-    * Step 5: User Acqusition
+    * Step 5: User Acquisition
 
 ### Phase 4: Evolutionary Investing as a Token
 * **Goal**: Move away from the MPT and pursue a far more recent and robust approach in financial theory, namely [genetic algorithms](https://www.investopedia.com/articles/financial-theory/11/using-genetic-algorithms-forecast-financial-markets.asp), reinforced parallelized machine learning, and [evolutionary strategies](https://blog.openai.com/evolution-strategies/).
-* **Strategy**: Implement cutting edge theory into a native Ethereum implementation, both to test the theoretical limits of the platform and apply the latest findings of quantiative financial theory.
-* **Origin**: At the initial proposal of [sigmaCoin](https://github.com/redqueenxyz/sigmaCoin) at the Blockgeek 2017 Hackathon, Vitalik Buterin commented on the practical validity of the MPT model, noting that it's theortical assumptions could make it easy to game or trick in the highly volatile (and unregulated) world of crypto Finance. His response was to pusure an implementation that was more adverserial, the investigation of which has yielded this new and fascinating financial theory that warrants testing in market.
+* **Strategy**: Implement cutting-edge theory into a native Ethereum implementation, both to test the theoretical limits of the platform and apply the latest findings of quantitative financial theory.
+* **Origin**: At the initial proposal of [sigmaCoin](https://github.com/redqueenxyz/sigmaCoin) at the Blockgeek 2017 Hackathon, Vitalik Buterin commented on the practical validity of the MPT model, noting that it's theortical assumptions could make it easy to game or trick in the highly volatile (and unregulated) world of crypto Finance. His response was to pursue an implementation that was more adversarial, the investigation of which has yielded this new and fascinating financial theory that warrants testing in the market.
 * **Reasoning**: By employing a simple yet intelligent updating rule across a variety of
-  randomly intialized workers, building a mechanism for the creation,
+  randomly initialized workers, building a mechanism for the creation,
   measurement, culling, and evolution of iterative generations of portfolios,
   we will implement [a multiagent search for the optimal cryptocurrency
   portfolio] that leverages the computational power of Ethereum itself to
